@@ -1,11 +1,7 @@
 
-  <h1>Rotten Mangoes Admin interface</h1>
-  <hr>
-  <% @admins.each do |admin| %>
-  <h2><%= admin.firstname %> <%= admin.lastname %></h2> 
-  <% end %>
-
-
-
-     
-
+<h1>Rotten Mangoes Admin interface</h1>
+<%= paginate @admins %>
+<hr>
+<% @admins.each do |admin| %>
+<h2><%= link_to admin.firstname, admin_user_path(admin) %> <%= link_to admin.lastname, admin_user_path(admin) %></h2> 
+<% end %>

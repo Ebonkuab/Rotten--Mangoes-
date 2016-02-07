@@ -49,3 +49,6 @@ gem 'carrierwave'
 
 # use for manipulating the size of pictures uploaded 
 gem 'rmagick'
+
+# used for pagination, limiting the amount of countents that show up in  page  
+gem 'kaminari'

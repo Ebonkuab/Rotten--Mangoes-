@@ -1,0 +1,8 @@
+
+<h3><%= link_to "Back to all users", admin_users_path %><h3><br/>
+<h3 style = "color: blue"> User Details </h3>
+<h2> First Name: <%= @admin.firstname %> </h2> 
+<h2> Last Name: <%= @admin.lastname %> </h2> 
+ <!-- (<%= link_to "edit", edit_movie_path(@movie) %>, <%= link_to "delete", movie_path(@movie), method: :delete, confirm: "You sure?" %>)</h2> -->
+<h4>Email: <%= @admin.email %> | Date created <%= @admin.created_at %></h4>
+   
