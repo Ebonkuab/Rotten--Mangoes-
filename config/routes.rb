@@ -14,5 +14,12 @@ MovieAppRottenMangoes::Application.routes.draw do
   end 
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]  
+  resources :admin, only: [:new, :create, :destroy] 
+
+  
+  namespace :admin do 
+  resources :users, only: [:new, :create, :destroy, :index]
+  
+  end
    root to: 'movies#index'
 end
